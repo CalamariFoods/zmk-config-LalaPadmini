@@ -16,9 +16,11 @@
 #define KEY_LAYER       8
 
 // Mouse Scroll Value
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // cirque trackpad input&layer control
+
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -154,6 +156,11 @@
         CONBO_shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <30 32>;
+        };
+
+        CONBO_Scrool3 {
+            bindings = <&mo 5>;
+            key-positions = <27 28>;
         };
     };
 
